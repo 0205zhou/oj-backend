@@ -1,6 +1,4 @@
 # 数据库初始化
-# @author <a href="https://github.com/liyupi">程序员鱼皮</a>
-# @from <a href="https://yupi.icu">编程导航知识星球</a>
 
 -- 创建库
 create database if not exists my_db;
@@ -49,7 +47,7 @@ create table if not exists question
 ) comment '题目' collate = utf8mb4_unicode_ci;
 
 -- 题目提交表
-create table if not exists qustion_submit
+create table if not exists question_submit
 (
     id         bigint auto_increment comment 'id' primary key,
     language   varchar(256)                       not null comment '编程语言',
